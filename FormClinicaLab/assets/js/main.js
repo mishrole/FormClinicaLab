@@ -10,18 +10,21 @@ function imprimirPaciente(){
 	var eleccionPaisSeleccionada 	= eleccionPais.options[eleccionPais.selectedIndex].value
 	var array = new Array();
 
-	array.push({nombre: nombre, apellido: apellido, edad: edad, ciudad: ciudad, genero: eleccionGeneroSeleccionada, pais: eleccionPaisSeleccionada})
+	array.push({nombre: nombre, apellido: apellido, edad: edad, ciudad: ciudad})
 
 	array.forEach(function(element){
 
 		var div = document.createElement("div");
 		var parrafoNombre = document.createElement("p");
-		parrafoNombre = document.createTextNode("Nombre: " + element.nombre + " " + element.apellido);
+		parrafoNombre.innerHTML = "Nombre: " + element.nombre + " " + element.apellido;
 		var parrafoEdad = document.createElement("p");
-		parrafoEdad = document.createTextNode("Edad: " + element.edad);
+		parrafoEdad.innerHTML = "Edad: " + element.edad;
+		var parrafoPais = document.createElement("p");
+		parrafoPais.innerHTML = "País " + eleccionPaisSeleccionada
 
 		div.appendChild(parrafoNombre)
 		div.appendChild(parrafoEdad)
+		div.appendChild(parrafoPais)
 		document.getElementById("pacientes").appendChild(div);
 
 		/*divPacientes.innerHTML = "Datos del paciente \n" +
