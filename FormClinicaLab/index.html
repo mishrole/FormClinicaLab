@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
+</head>
+<body align="center">
+
+	<section>
+		<div id="contenedor-form">
+			<form class="formulario">
+			
+				<h2 id="title-form">Clínica Lab</h2>
+
+				<div class="divs-form">
+					<label for="name"><strong></strong></label>
+					<input class="input-box" type="text" id="name" placeholder="ingrese su nombre">
+				</div>
+
+				<div class="divs-form">
+					<label for="lastname"><strong></strong></label>
+					<input class="input-box" type="text" id="lastname" placeholder="ingrese su apellido">
+				</div>
+
+				<div class="divs-form">
+					<label for="age"><strong></strong></label>
+					<input class="input-box" type="text" id="age" placeholder="ingrese su edad">
+				</div>
+
+				<div class="divs-form">
+		            <select id="gender" class="select-box">
+		              <option value="0">Selecciona tu género</option>
+		              <option value="femenino">Femenino</option>
+		              <option value="masculinno">Masculino</option>
+		            </select>
+          		</div>
+
+          		<div class="divs-form">
+					<label for="city"><strong></strong></label>
+					<input class="input-box" type="text" id="city" placeholder="ingrese su ciudad">
+				</div>
+
+				<div class="divs-form">
+		            <select id="country" class="select-box">
+		              <option value="0">Selecciona tu país</option>
+		              <option value="Argentina">Argentina</option>
+		              <option value="Bolivia">Bolivia</option>
+		              <option value="Brasil">Brasil</option>
+		              <option value="Chile">Chile</option>
+		              <option value="Colombia">Colombia</option>
+		              <option value="Ecuador">Ecuador</option>
+		              <option value="Paraguay">Paraguay</option>
+		              <option value="Perú">Perú</option>
+		              <option value="Uruguay">Uruguay</option>
+		              <option value="Venezuela">Venezuela</option>
+		            </select>
+          		</div>
+				
+				<button id="submit-button" type="submit">Registrar</button>
+			</form>
+		</div>
+	</section>
+
+	<div id="pacientes">
+		
+	</div>
+
+	<script type="text/javascript" src="assets/js/main.js"></script>
+	<script type="text/javascript" src="assets/js/prevent.js"></script>
+	
+</body>
+</html>

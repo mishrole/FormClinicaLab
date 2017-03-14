@@ -1,0 +1,27 @@
+html{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Raleway', sans-serif;
+	font-size: 15px;
+}
+
+.divs-form {
+	margin-bottom: 20px;
+}
+
+#contenedor-form {
+	margin-top: 70px;
+}
+
+#title-form {
+	font-size: 30px;
+	margin-bottom: 50px;
+}
+
+.input-box, .select-box, #submit-button {
+	width: 200px;
+	height: 25px;
+	font-size: 15px;
+}
